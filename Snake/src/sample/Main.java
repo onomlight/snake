@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.animation.Animation;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -136,9 +137,11 @@ public class Main extends Application {
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {
                 if ((i + j) % 2 == 0) {
-                    gc.setFill(Color.web("AAD751"));
+                    gc.setFill(Color.web("02075d"));
                 } else {
-                    gc.setFill(Color.web("A2D149"));
+                    gc.setFill(Color.web("330066"));
+//색 참조 사이트
+//https://encycolorpedia.com/330066                    
                 }
                 gc.fillRect(i * SQUARE_SIZE, j * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE);
             }
